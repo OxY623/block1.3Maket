@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
     }
-
+/*header*/
     .header {
         width: 100%;
         height: 88px;
@@ -19,9 +19,12 @@
         flex-direction: row;
         padding-left:16px;
         padding-right:16px;
+        border-bottom: 1px solid rgb(217, 255, 245);
     }
 
-    .header__element{}
+    .header__element{
+        padding: 0;
+    }
     .menu-burger{
         width: 40px;
         height: 40px;
@@ -82,19 +85,69 @@
 
 
     }
+
     /*Проверка области наведения*/
-    .menu__link:hover {
-        background-color: #ef0505;
+    .menu__link:hover, .menu-burger:hover {
+        outline: 1px solid rgb(255, 62, 121);
+        border-radius: 50%;
     }
+
     /*Иконки меню*/
 
     .menu-burger::after{
+
+        background-image: url('image/burgerburger.svg');
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .menu__link--call::after{
+        content: "";
+        background-image: url('image/callcall.svg');
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu__link--write::after{
+
+        background-image: url('image/chatmessage.svg');
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu__link--login::after{
+        content: "";
+        background-image: url('image/profileuser.svg');
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu__link--status::after{
+        content: "";
+        background-image: url('image/repairsetting.svg');
+        display: block;
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .menu__link--application::after{
+        content: "";
+        background-image: url('image/checkstatussearch.svg');
+        display: block;
+        width: 40px;
+        height: 40px;
+
+
+    }
+
+    menu__link::after, .menu-burger::after{
         content: "";
         display: block;
         width: 40px;
         height: 40px;
         text-align: center;
-        background-image: url('image/burgerburger.svg');
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -104,66 +157,17 @@
         align-items: center;
         justify-content: center;
     }
-    .menu__link--call::after{
-        content: "";
-        display: block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        background-image: url('image/callcall.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .menu__link--write::after{
-        content: "";
-        display: block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        background-image: url('image/chatmessage.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .menu__link--login::after{
-        content: "";
-        display: block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        background-image: url('image/profileuser.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .menu__link--status::after{
-        content: "";
-        display: block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        background-image: url('image/repairsetting.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .menu__link--application::after{
-        content: "";
-        display: block;
-        width: 40px;
-        height: 40px;
-        text-align: center;
-        background-image: url('image/checkstatussearch.svg');
-        background-position: center;
-        background-repeat: no-repeat;
-        align-items: center;
-    }
 /*Скрыть текст*/
     .menu__item--hidden-link{
         line-height: 0;
         font-size: 0;
         color: transparent;
+    }
+    /*content*/
+    .main section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 
 
