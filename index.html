@@ -11,9 +11,9 @@
 <header class="header">
     <!--This is the menu burger-->
     <nav class="header__element menu-burger">
-        <div hidden="hidden" class="menu-burger__line"></div>
-        <div hidden="hidden" class="menu-burger__line"></div>
-        <div hidden="hidden" class="menu-burger__line"></div>
+        <div hidden class="menu-burger__line"></div>
+        <div hidden class="menu-burger__line"></div>
+        <div hidden class="menu-burger__line"></div>
     </nav>
 
     <!--This is the logotype-->
@@ -26,7 +26,7 @@
         <ul class="menu__list">
             <!--This is the menu list-->
             <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                              class="menu__link menu__link--call ">Позвонить</a></li>
+                                                              class="menu__link menu__link--call">Позвонить</a></li>
             <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--write">Написать</a>
             </li>
             <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--login">Логин</a>
@@ -65,16 +65,16 @@
         </nav>
     </section>
     <section>
-        <h2 hidden="hidden">Это главная секция</h2>
+        <h2 hidden>Это главная секция</h2>
         <!-- This is the block content -->
         <article class="article">
-            <h3 hidden="hidden">О нас</h3>
+            <h3 hidden>О нас</h3>
             <!-- This is the block text-->
             <p class="article__text article__text--primary">
                 Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                 Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
                 гарантией производителя.</p>
-            <div class="read-more">Читать далее</div>
+            <button type="button" class="article__button button_read-more">Читать далее</button>
             <p class="article__text article__text--hidden">
                 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
                 что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам
@@ -87,9 +87,5 @@
     </section>
 </main>
 </body>
-<script type="text/javascript">
-    function toggle_show(id) {
-        document.getElementById(id).style.display = document.getElementById(id).style.display == 'none' ? 'block' : 'none';
-    }
-</script>
 </html>
+
