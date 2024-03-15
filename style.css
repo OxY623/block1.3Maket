@@ -272,7 +272,7 @@
     .button_read-more:active,.button_read-more:focus,.button_read-more:visited{
         all: unset; /*Отключаем все стили. */
         display: block;
-        width: 132px;
+        width: auto;
         height: 48px;
         color: rgb(27, 28, 33);
         font-size: 16px;
@@ -294,5 +294,10 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+    }
+
+    .article__image{
+        max-width: 100%;
+        height:auto;
     }
 }
