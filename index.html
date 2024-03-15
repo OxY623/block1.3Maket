@@ -25,9 +25,12 @@
     <nav class="menu menu--primary">
         <ul class="menu__list">
             <!--This is the menu list-->
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--call ">Позвонить</a></li>
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--write">Написать</a></li>
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--login">Логин</a></li>
+            <li class="menu__item menu__item--hidden-link"><a href="#"
+                                                              class="menu__link menu__link--call ">Позвонить</a></li>
+            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--write">Написать</a>
+            </li>
+            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--login">Логин</a>
+            </li>
         </ul>
     </nav>
 
@@ -35,8 +38,10 @@
     <nav class="menu menu--secondary">
         <!--This is the menu list-->
         <ul class="menu__list">
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status">Статус ремонта</a></li>
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application">Отправить заявку</a></li>
+            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status">Статус
+                ремонта</a></li>
+            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application">Отправить
+                заявку</a></li>
         </ul>
     </nav>
 
@@ -48,7 +53,8 @@
         <!-- This is the block navigation -->
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link">Ремонтируемые бренды</a></li>
+                <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link navigation__link--active">Ремонтируемые
+                    бренды</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Ремонтируемые устройства</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Цены на услуги</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Адреса сервисных центров</a></li>
@@ -63,11 +69,12 @@
         <article class="article">
             <h3 hidden="hidden">О нас</h3>
             <!-- This is the block text-->
-            <p class="article__text">
+            <p class="article__text article__text--primary">
                 Мы являемся авторизованным сервисным центром по ремонту техники Dell.
                 Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-                гарантией производителя.
-
+                гарантией производителя.</p>
+            <div class="read-more">Читать далее</div>
+            <p class="article__text article__text--hidden">
                 Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
                 что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам
                 обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
@@ -79,4 +86,9 @@
     </section>
 </main>
 </body>
+<script type="text/javascript">
+    function toggle_show(id) {
+        document.getElementById(id).style.display = document.getElementById(id).style.display == 'none' ? 'block' : 'none';
+    }
+</script>
 </html>
