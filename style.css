@@ -268,7 +268,8 @@
         display: none;
     }
     /* ReadMore Copy */
-    .button_read-more:link{
+    .button_read-more, .button_read-more:link,.button_read-more:hover,
+    .button_read-more:active,.button_read-more:focus,.button_read-more:visited{
         all: unset; /*Отключаем все стили. */
         display: block;
         width: 132px;
