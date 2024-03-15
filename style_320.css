@@ -282,6 +282,9 @@
         background-color: white;
         text-decoration: none;
         border:none;
+        margin-top: 16px;
+        margin-bottom: 0;
+        cursor: pointer;
     }
     .button_read-more:before{
         content: "";
@@ -297,7 +300,50 @@
     }
 
     .article__image{
+        padding: 0;
         max-width: 100%;
         height:auto;
+        margin-bottom: 35px;
+        margin-top: 16px
     }
 }
+
+/* Общие стили для всех элементов */
+
+
+/* Стили для мобильной версии (320px) */
+@media screen and (max-width: 320px) {
+    body {
+        font-size: 14px; /* Уменьшаем базовый размер шрифта */
+    }
+
+    .main__title {
+        padding-left: 20px; /* Добавляем отступ слева для заголовка */
+        position: relative; /* Позиционируем заголовок относительно */
+    }
+
+    .main__title::before {
+        position: absolute; /* Позиционируем псевдоэлемент абсолютно */
+        content: "";
+        display: inline-block;
+        left: 0; /* Выравниваем псевдоэлемент по левому краю */
+        top: 50%; /* Перемещаем в вертикально по середине заголовка */
+        transform: translateY(-50%); /* Корректируем вертикальное выравнивание */
+        margin-right: 16px;
+        border-radius: 1px;
+        width: 4px;
+        height: 40px;
+        background: rgb(65, 246, 215);
+    }
+
+    .article__text {
+        width: calc(100% - 32px); /* Рассчитываем ширину параграфа с учетом отступов */
+        text-align: left;
+    }
+
+    .button_read-more {
+        width: calc(100% - 32px); /* Рассчитываем ширину кнопки с учетом отступов */
+        margin-top: 16px;
+    }
+}
+
