@@ -61,16 +61,17 @@ p {
     height: 88px;
     background: rgb(255, 255, 255);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    padding-left: 16px;
-    padding-right: 16px;
+    /*padding-left: 16px;*/
+    /*padding-right: 16px;*/
     border-bottom: 1px solid rgb(217, 255, 245);
 }
 
 .header__element {
     padding: 0;
+    margin: 0;
 }
 
 .header__wrapper-burger,.header__wrapper-menu {
@@ -81,8 +82,8 @@ p {
     vertical-align: middle;
 
 }
-
-.menu-burger {
+/*Отключаю бургер в обертке вместе с разделителем*/
+.header__wrapper-burger {
     display: none;
 }
 
@@ -93,7 +94,7 @@ p {
 /*Голова уже пухнет от этой моей фичи*/
 .deliver {
     border-radius: 1px;
-    background: rgb(234, 8, 8);
+    background: rgb(234, 234, 234);
     width: 2px;
     height: 32px;
     vertical-align: center;
@@ -223,6 +224,7 @@ p {
 
 .main section {
     padding: 0;
+    margin: 0;
 }
 
 .main__title {

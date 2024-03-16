@@ -1,51 +1,59 @@
 /* Стили для мобильной версии (768px) */
 @media screen and (min-width: 768px) {
-    .main__menu{
+    /* Скрывает основное меню */
+    .main__menu {
         display: none;
     }
+
+    /* Устанавливает позицию блока "menu-burger" как относительную и отображает его как блочный элемент */
     .menu-burger {
         position: relative;
         display: block;
     }
 
-    .menu--primary{
+    /* Отображает основное меню как гибкие элементы */
+    .menu--primary {
         display: flex;
     }
-    .section{
+
+    /* Устанавливает отступ сверху для раздела */
+    .section {
         margin-top: 32px;
     }
 
-    .article__text--hidden{
-        font-size:14px;
+    /* Отображает скрытый текст внутри статьи */
+    .article__text--hidden {
+        font-size: 14px;
         opacity: 1;
-
     }
+
+    /* Отображает статью как гибкие элементы в строку с пространством между ними */
     .article {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .article__text{
-        width:312px;
+
+    /* Устанавливает ширину текстовой части статьи */
+    .article__text {
+        width: 312px;
     }
-    .article__content{
+
+    /* Отображает контент статьи как гибкие элементы в колонку с пространством между ними и центрирует их */
+    .article__content {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
-    .text-hidden{
+
+    /* Скрывает текст, устанавливая его размер шрифта на 0, сдвигая текст за пределы видимой области */
+    .text-hidden {
         font-size: 0;
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
     }
-
-
-
-
-
-
 
 
 }

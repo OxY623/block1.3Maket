@@ -1,20 +1,25 @@
 /* Стили для мобильной версии (1120px) */
 @media screen and (min-width: 1120px) {
-    .header{
-        display: none
+    /* Скрывает заголовок */
+    .header {
+        display: none;
     }
-    .main__menu{
-        display:flex;
+
+    /* Отображает основное меню как гибкие элементы с выравниванием по правому краю */
+    .main__menu {
+        display: flex;
         justify-content: flex-end;
     }
 
-    .menu__item--hidden-link{
+    /* Отображает скрытую ссылку в пункте меню с изначальными стилями */
+    .menu__item--hidden-link {
         font-size: initial;
         text-indent: initial;
         white-space: normal;
         overflow: visible;
     }
 
+    /* Определяет стили для разделов */
     section {
         display: flex;
         flex-direction: row;
@@ -23,42 +28,47 @@
         flex-wrap: wrap;
     }
 
+    /* Устанавливает флекс-расширение для заголовка и выравнивание его к правому краю */
     .main__title {
         flex: 1;
         margin-right: 20px; /* Расстояние между заголовком и меню */
     }
 
+    /* Устанавливает флекс-расширение для основного меню и выравнивание его к правому краю */
     .main__menu {
         flex: 1;
         text-align: right;
         margin-left: 20px; /* Расстояние между заголовком и меню */
     }
 
+    /* Определяет стили для навигации */
     .navigation {
         width: 100%;
         margin-top: 8px; /* Расстояние между верхним контентом и навигацией */
     }
 
-    .text-hidden{
+    /* Восстанавливает изначальные стили для скрытого текста */
+    .text-hidden {
         font-size: initial;
         text-indent: initial;
         white-space: initial;
         overflow: visible;
     }
 
-    .navigation{
+    /* Восстанавливает изначальные стили для навигации по горизонтали */
+    .navigation {
         overflow-x: initial;
-
     }
 
-    .navigation__list{
+    /* Устанавливает перенос текста для списка навигации */
+    .navigation__list {
         flex-wrap: wrap;
     }
-    .navigation__link{
+
+    /* Устанавливает отступы для ссылок навигации */
+    .navigation__link {
         padding: 8px 22px 8px 22px;
     }
-
-
 
 
 }
