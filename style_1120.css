@@ -1,5 +1,64 @@
 /* Стили для мобильной версии (1120px) */
 @media screen and (min-width: 1120px) {
+    .header{
+        display: none
+    }
+    .main__menu{
+        display:flex;
+        justify-content: flex-end;
+    }
+
+    .menu__item--hidden-link{
+        font-size: initial;
+        text-indent: initial;
+        white-space: normal;
+        overflow: visible;
+    }
+
+    section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .main__title {
+        flex: 1;
+        margin-right: 20px; /* Расстояние между заголовком и меню */
+    }
+
+    .main__menu {
+        flex: 1;
+        text-align: right;
+        margin-left: 20px; /* Расстояние между заголовком и меню */
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: 8px; /* Расстояние между верхним контентом и навигацией */
+    }
+
+    .text-hidden{
+        font-size: initial;
+        text-indent: initial;
+        white-space: initial;
+        overflow: visible;
+    }
+
+    .navigation{
+        overflow-x: initial;
+
+    }
+
+    .navigation__list{
+        flex-wrap: wrap;
+    }
+    .navigation__link{
+        padding: 8px 22px 8px 22px;
+    }
+
+
 
 
 }

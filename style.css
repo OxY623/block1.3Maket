@@ -2,6 +2,13 @@
     border: 1px solid red;
 }
 
+.wrapper {
+    width: auto;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
 /* Общие стили для всех элементов */
 body {
     font-family: "TT Lakes", sans-serif;
@@ -35,6 +42,19 @@ p {
     line-height: 18px;
     text-align: left;
 }
+.menu__link,.menu__link:link,
+.menu__link:focus,
+.menu__link:active,
+.menu__link:hover{
+    text-decoration: none;
+    color: rgb(27, 28, 33);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+
+}
 
 .header {
     width: auto;
@@ -53,9 +73,12 @@ p {
     padding: 0;
 }
 
-.header__wrapper-burger {
+.header__wrapper-burger,.header__wrapper-menu {
     width: auto;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    vertical-align: middle;
 
 }
 
@@ -67,20 +90,20 @@ p {
     width: 97px;
     height: 51px;
 }
-
+/*Голова уже пухнет от этой моей фичи*/
 .deliver {
     border-radius: 1px;
-    background: rgb(183, 182, 182);
+    background: rgb(234, 8, 8);
     width: 2px;
     height: 32px;
-    margin-right: 20px;
-    margin-left: 20px;
-
+    vertical-align: center;
 }
 
 .menu {
     display: flex;
     justify-content: flex-start;
+    padding-left:20px;
+    padding-right: 20px;
 }
 
 
@@ -114,11 +137,6 @@ p {
     flex-wrap: nowrap;
 }
 
-.menu__link:hover,
-.menu-burger:hover {
-    outline: 1px solid rgb(255, 62, 121);
-    border-radius: 50%;
-}
 
 .menu__link::after,
 .menu-burger::before {
@@ -188,7 +206,6 @@ p {
     text-align: left;
     display: inline-block;
     padding: 8px 9px 8px 16px;
-    color: rgb(126, 126, 130);
     flex-wrap: nowrap;
     vertical-align: center;
 }

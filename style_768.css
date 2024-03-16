@@ -1,9 +1,49 @@
 /* Стили для мобильной версии (768px) */
 @media screen and (min-width: 768px) {
+    .main__menu{
+        display: none;
+    }
     .menu-burger {
         position: relative;
-        display: inline-block;
+        display: block;
     }
+
+    .menu--primary{
+        display: flex;
+    }
+    .section{
+        margin-top: 32px;
+    }
+
+    .article__text--hidden{
+        font-size:14px;
+        opacity: 1;
+
+    }
+    .article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .article__text{
+        width:312px;
+    }
+    .article__content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .text-hidden{
+        font-size: 0;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+
+
+
 
 
 

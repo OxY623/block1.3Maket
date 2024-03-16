@@ -1,19 +1,31 @@
 @media screen and (min-width: 320px) {
-    .header{
+
+    .main__menu {
+        display: none;
+    }
+
+    .header {
         justify-content: space-around;
     }
+
     .menu-burger {
         display: block;
-        margin-right: 17px;
+        padding-right: 17px;
     }
-    .header__deliver--hidden{
+
+    .header__deliver--hidden {
         display: none;
     }
 
     .menu {
         display: flex;
     }
-    .menu__link {
+
+    .main__menu {
+        display: none;
+    }
+
+    .menu__item--hidden-link {
         font-size: 0;
         text-indent: 100%;
         white-space: nowrap;
@@ -25,11 +37,11 @@
     }
 
 
-    .menu--primary{
+    .menu--primary {
         display: none;
     }
 
-    .main__title{
+    .main__title {
         margin-top: 24px;
         margin-bottom: 24px;
     }
@@ -67,18 +79,21 @@
         border: 2px solid rgb(184, 255, 236);
         border-radius: 6px;
     }
-    .article{
+
+    .article {
         margin-left: auto;
         margin-right: auto;
     }
-    .article__text--hidden{
-        font-size:0;
+
+    .article__text--hidden {
+        font-size: 0;
         opacity: 0;
         overflow: hidden;
     }
-    .article__button{
-        margin-left:0;
-        margin-right:auto;
+
+    .article__button {
+        margin-left: 0;
+        margin-right: auto;
     }
 
 }

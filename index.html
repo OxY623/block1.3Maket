@@ -7,33 +7,35 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_320.css">
     <link rel="stylesheet" href="style_768.css">
-    <!--    <link rel="stylesheet" href="style_1120.css">-->
-    <!--    <link rel="stylesheet" href="fonts/stylesheet.css">-->
+    <link rel="stylesheet" href="style_1120.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
 </head>
 <body>
-<!--This is the header-->
+<!-- Это верхняя часть страницы -->
 <header class="header">
-    <!--This is the menu burger-->
-    <div class="header__wrapper header__wrapper-burger">
+    <!-- Бургер-меню -->
+    <div class="header__wrapper header__wrapper-burger wrapper">
         <nav class="header__element menu-burger">
             <div hidden class="menu-burger__line"></div>
             <div hidden class="menu-burger__line"></div>
             <div hidden class="menu-burger__line"></div>
         </nav>
-
+        <!-- Разделитель -->
         <div class="header__element header__deliver--hidden deliver"></div>
+
+
     </div>
 
 
-    <!--This is the logotype-->
+    <!-- Логотип -->
     <div class="header__element logo">
         <img src="image/Grouplogotype.svg" alt="logotype" class="logo__logotype">
     </div>
-    <div class="header__wrapper header__wrapper-menu">
-        <!--This is the first menu-->
+    <div class="header__wrapper header__wrapper-menu wrapper">
+        <!-- Первое меню -->
         <nav class="menu menu--primary">
             <ul class="menu__list">
-                <!--This is the menu list-->
+                <!-- Элементы первого меню -->
                 <li class="menu__item menu__item--hidden-link"><a href="#"
                                                                   class="menu__link menu__link--call">Позвонить</a></li>
                 <li class="menu__item menu__item--hidden-link"><a href="#"
@@ -44,12 +46,12 @@
                 </li>
             </ul>
         </nav>
-
+        <!-- Разделитель -->
         <div class="header__deliver  deliver"></div>
 
-        <!--This is the second menu-->
+        <!-- Второе меню -->
         <nav class="menu menu--secondary">
-            <!--This is the menu list-->
+            <!-- Элементы второго меню -->
             <ul class="menu__list">
                 <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status">Статус
                     ремонта</a></li>
@@ -61,11 +63,20 @@
 
 
 </header>
-<!--This is the main content-->
+<!-- Основное содержимое страницы -->
 <main class="main">
     <section>
         <h1 class="main__title">Услуги и сервисы</h1>
-        <!-- This is the block navigation -->
+        <nav class="main__menu menu menu--secondary">
+            <!-- Меню -->
+            <ul class="menu__list">
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status">Статус
+                    ремонта</a></li>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application">Отправить
+                    заявку</a></li>
+            </ul>
+        </nav>
+        <!-- Навигация -->
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item navigation__item--active"><a href="#"
@@ -80,25 +91,30 @@
         </nav>
     </section>
     <section>
+        <!-- Содержимое второй секции -->
         <h2 hidden>Это главная секция</h2>
-        <!-- This is the block content -->
+        <!-- Статья -->
         <article class="article">
-            <h3 hidden>О нас</h3>
-            <!-- This is the block text-->
-            <p class="article__text article__text--primary">
-                Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-                гарантией производителя.</p>
-            <button type="button" class="article__button button_read-more">Читать далее</button>
-            <p class="article__text article__text--hidden">
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера,
-                что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам
-                обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
-            </p>
-            <!-- This is the block image-->
+            <div class="article__content">
+                <h3 hidden>О нас</h3>
+                <!-- Текст статьи -->
+                <p class="article__text article__text--primary text">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+                    гарантией производителя.
+                </p>
+                <!-- Скрытый текст -->
+                <p class="article__text article__text--hidden text">
+                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера<span class="text-hidden",
+                    что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам
+                    обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+                </p>
+                <!-- Кнопка "Читать далее" -->
+                <button type="button" class="article__button button_read-more">Читать далее</button>
+            </div>
             <img src="image/Picture%20Copybackground-logotype.jpg" alt="The photo is logotype" class="article__image">
-
         </article>
+
     </section>
 </main>
 </body>
