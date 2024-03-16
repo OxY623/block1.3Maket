@@ -42,19 +42,7 @@ p {
     line-height: 18px;
     text-align: left;
 }
-.menu__link,.menu__link:link,
-.menu__link:focus,
-.menu__link:active,
-.menu__link:hover{
-    text-decoration: none;
-    color: rgb(27, 28, 33);
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.2px;
-    text-align: left;
 
-}
 
 .header {
     width: auto;
@@ -91,7 +79,7 @@ p {
     width: 97px;
     height: 51px;
 }
-/*Голова уже пухнет от этой моей фичи*/
+/*Разделитель*/
 .deliver {
     border-radius: 1px;
     background: rgb(234, 234, 234);
@@ -103,8 +91,6 @@ p {
 .menu {
     display: flex;
     justify-content: flex-start;
-    padding-left:20px;
-    padding-right: 20px;
 }
 
 
@@ -112,6 +98,20 @@ p {
     margin: 0;
     padding: 0;
     list-style: none;
+}
+
+.menu__link,.menu__link:link,
+.menu__link:focus,
+.menu__link:active,
+.menu__link:hover{
+    text-decoration: none;
+    color: rgb(27, 28, 33);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-align: left;
+
 }
 
 .menu__item {
@@ -192,7 +192,10 @@ p {
     margin: 0;
     padding: 0;
     width: auto;
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     list-style: none;
 }
 
@@ -258,7 +261,7 @@ p {
 }
 
 .article__text {
-    width: calc(100% - 32px);
+    width: auto;
     text-align: left;
     height: auto;
 }

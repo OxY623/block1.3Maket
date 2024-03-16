@@ -1,110 +1,110 @@
 @media screen and (min-width: 320px) {
 
-    /* Скрывает основное меню, устанавливая его свойство отображения на none */
-    .main__menu {
-        display: none;
-    }
+/*    !* Скрывает основное меню, устанавливая его свойство отображения на none *!*/
+/*    .main__menu {*/
+/*        display: none;*/
+/*    }*/
 
-    /* Выравнивает содержимое заголовка равномерно с промежутками вокруг каждого элемента */
-    .header {
-        justify-content: space-around;
-    }
+/*    !* Выравнивает содержимое заголовка равномерно с промежутками вокруг каждого элемента *!*/
+/*    .header {*/
+/*        justify-content: space-around;*/
+/*    }*/
 
-    /* Отображает иконку бургера меню и добавляет отступ справа от нее */
-    .menu-burger {
-        display: block;
-        padding-right: 17px;
-    }
+/*    !* Отображает иконку бургера меню и добавляет отступ справа от нее *!*/
+/*    .menu-burger {*/
+/*        display: block;*/
+/*        padding-right: 17px;*/
+/*    }*/
 
-    /* Скрывает элемент, связанный с доставкой, в заголовке */
-    .header__deliver--hidden {
-        display: none;
-    }
+/*    !* Скрывает элемент, связанный с доставкой, в заголовке *!*/
+/*    .header__deliver--hidden {*/
+/*        display: none;*/
+/*    }*/
 
-    /* Отображает пункты меню в виде гибких элементов */
-    .menu {
-        display: flex;
-    }
+/*    !* Отображает пункты меню в виде гибких элементов *!*/
+/*    .menu {*/
+/*        display: flex;*/
+/*    }*/
 
-    /* Скрывает ссылку на элемент меню, устанавливая ее размер шрифта на 0 и сдвигая текст за пределы видимой области */
-    .menu__item--hidden-link {
-        font-size: 0;
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
-    }
+/*    !* Скрывает ссылку на элемент меню, устанавливая ее размер шрифта на 0 и сдвигая текст за пределы видимой области *!*/
+/*    .menu__item--hidden-link {*/
+/*        font-size: 0;*/
+/*        text-indent: 100%;*/
+/*        white-space: nowrap;*/
+/*        overflow: hidden;*/
+/*    }*/
 
-    /* Позиционирует вторичное меню относительно своего контейнера */
-    .menu--secondary {
-        position: relative;
-    }
+/*    !* Позиционирует вторичное меню относительно своего контейнера *!*/
+/*    .menu--secondary {*/
+/*        position: relative;*/
+/*    }*/
 
-    /* Скрывает основное меню */
-    .menu--primary {
-        display: none;
-    }
+/*    !* Скрывает основное меню *!*/
+/*    .menu--primary {*/
+/*        display: none;*/
+/*    }*/
 
-    /* Добавляет отступы сверху и снизу к основному заголовку */
-    .main__title {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
+/*    !* Добавляет отступы сверху и снизу к основному заголовку *!*/
+/*    .main__title {*/
+/*        margin-top: 24px;*/
+/*        margin-bottom: 24px;*/
+/*    }*/
 
-    /* Стилизует элемент навигации, позволяя горизонтальную прокрутку при необходимости и предотвращает перенос текста */
-    .navigation {
-        padding: 0;
-        margin: 0;
-        margin-left: 16px;
-        width: 100%;
-        height: 42px;
-        overflow-x: auto;
-        white-space: nowrap;
-        display: flex;
-    }
+/*    !* Стилизует элемент навигации, позволяя горизонтальную прокрутку при необходимости и предотвращает перенос текста *!*/
+/*    .navigation {*/
+/*        padding: 0;*/
+/*        margin: 0;*/
+/*        margin-left: 16px;*/
+/*        width: 100%;*/
+/*        height: 42px;*/
+/*        overflow-x: auto;*/
+/*        white-space: nowrap;*/
+/*        display: flex;*/
+/*    }*/
 
-    /* Стилизует список элементов навигации как инлайн-гибкие элементы */
-    .navigation__list {
-        margin: 0;
-        padding: 0;
-        display: inline-flex;
-    }
+/*    !* Стилизует список элементов навигации как инлайн-гибкие элементы *!*/
+/*    .navigation__list {*/
+/*        margin: 0;*/
+/*        padding: 0;*/
+/*        display: inline-flex;*/
+/*    }*/
 
-    /* Стилизует ссылки навигации с определенными свойствами шрифта, отступами и цветом и предотвращает перенос текста */
-    .navigation__link {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        display: inline-block;
-        padding: 8px 16px;
-        color: rgb(126, 126, 130);
-        flex-wrap: nowrap;
-    }
+/*    !* Стилизует ссылки навигации с определенными свойствами шрифта, отступами и цветом и предотвращает перенос текста *!*/
+/*    .navigation__link {*/
+/*        text-decoration: none;*/
+/*        font-size: 16px;*/
+/*        font-weight: 500;*/
+/*        line-height: 24px;*/
+/*        letter-spacing: -0.2px;*/
+/*        display: inline-block;*/
+/*        padding: 8px 16px;*/
+/*        color: rgb(126, 126, 130);*/
+/*        flex-wrap: nowrap;*/
+/*    }*/
 
-    /* Стилизует активную ссылку навигации, такую как добавление рамки */
-    .navigation__link--active {
-        border: 2px solid rgb(184, 255, 236);
-        border-radius: 6px;
-    }
+/*    !* Стилизует активную ссылку навигации, такую как добавление рамки *!*/
+/*    .navigation__link--active {*/
+/*        border: 2px solid rgb(184, 255, 236);*/
+/*        border-radius: 6px;*/
+/*    }*/
 
-    /* Центрирует элемент статьи по горизонтали на странице */
-    .article {
-        margin-left: auto;
-        margin-right: auto;
-    }
+/*    !* Центрирует элемент статьи по горизонтали на странице *!*/
+/*    .article {*/
+/*        margin-left: auto;*/
+/*        margin-right: auto;*/
+/*    }*/
 
-    /* Скрывает текст внутри статьи, устанавливая его размер шрифта на 0, делая его прозрачным и убирая переполнение */
-    .article__text--hidden {
-        font-size: 0;
-        opacity: 0;
-        overflow: hidden;
-    }
+/*    !* Скрывает текст внутри статьи, устанавливая его размер шрифта на 0, делая его прозрачным и убирая переполнение *!*/
+/*    .article__text--hidden {*/
+/*        font-size: 0;*/
+/*        opacity: 0;*/
+/*        overflow: hidden;*/
+/*    }*/
 
-    /* Регулирует отступ кнопки статьи */
-    .article__button {
-        margin-left: 0;
-        margin-right: auto;
-    }
+/*    !* Регулирует отступ кнопки статьи *!*/
+/*    .article__button {*/
+/*        margin-left: 0;*/
+/*        margin-right: auto;*/
+/*    }*/
 
-}
+/*}*/
