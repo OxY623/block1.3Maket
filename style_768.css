@@ -5,6 +5,13 @@
         display: none;
     }
 
+    .header {
+        justify-content: flex-start;
+    }
+    .header__wrapper-burger{
+        width: 62px;
+    }
+
     /* Устанавливает позицию блока "menu-burger" как относительную и отображает его как блочный элемент */
     .menu-burger {
         position: relative;
@@ -24,14 +31,16 @@
 
     /* Отображает скрытый текст внутри статьи */
     .article__text--hidden {
-        font-size: 14px;
-        opacity: 1;
+        display: initial;
+        /*font-size: 14px;*/
+        /*opacity: 1;*/
     }
 
     /* Отображает статью как гибкие элементы в строку с пространством между ними */
     .article {
         display: flex;
         flex-direction: row;
+        width: 100%;
         justify-content: space-between;
     }
 
@@ -54,6 +63,11 @@
         text-indent: 100%;
         white-space: nowrap;
         overflow: hidden;
+    }
+
+    .article__image{
+        width: 80%;
+        height: auto;
     }
 
 
