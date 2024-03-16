@@ -9,6 +9,7 @@
     .menu-burger {
         position: relative;
         display: block;
+        padding-right: 17px;
     }
 
     /* Отображает основное меню как гибкие элементы */

@@ -197,6 +197,7 @@ p {
     justify-content: flex-start;
     flex-wrap: wrap;
     list-style: none;
+
 }
 
 .navigation__link {
@@ -258,6 +259,11 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.article__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .article__text {

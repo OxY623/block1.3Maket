@@ -12,11 +12,13 @@
     }
 
     /* Отображает скрытую ссылку в пункте меню с изначальными стилями */
+    /*Не работает*/
     .menu__item--hidden-link {
-        font-size: initial;
-        text-indent: initial;
-        white-space: normal;
+        /*font-size: initial;*/
+        /*text-indent: initial;*/
+        /*white-space: normal;*/
         overflow: visible;
+        text-indent: initial;
     }
 
     /* Определяет стили для разделов */
