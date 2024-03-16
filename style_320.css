@@ -112,10 +112,11 @@
         /*overflow: hidden;*/
         display: none;
     }
-    .article__text--primary{
+    .article__text--primary,
+    .article__text{
         margin-bottom: 0;
-        padding-left:16px;
-        padding-right:16px;
+        /*padding-left:16px;*/
+        /*padding-right:16px;*/
     }
 
     /* Регулирует отступ кнопкy статьи */

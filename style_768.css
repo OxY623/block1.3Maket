@@ -4,7 +4,9 @@
     .main__menu {
         display: none;
     }
-
+    main{
+        margin-right: 15px;
+    }
     .header {
         justify-content: flex-start;
     }
@@ -42,11 +44,15 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
+        margin:32px 25px 40px 24px;
+    }
+    .article__text:first-of-type {
+        margin-top: 0;
     }
 
     /* Устанавливает ширину текстовой части статьи */
     .article__text {
-        width: 312px;
+        width: auto;
     }
 
     /* Отображает контент статьи как гибкие элементы в колонку с пространством между ними и центрирует их */
@@ -54,20 +60,23 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
+        width: 40%;
     }
 
     /* Скрывает текст, устанавливая его размер шрифта на 0, сдвигая текст за пределы видимой области */
     .text-hidden {
-        font-size: 0;
-        text-indent: 100%;
-        white-space: nowrap;
-        overflow: hidden;
+        /*font-size: 0;*/
+        /*text-indent: 100%;*/
+        /*white-space: nowrap;*/
+        /*overflow: hidden;*/
+        display: none;
     }
 
     .article__image{
-        width: 80%;
+        width: 46%;
         height: auto;
+       
     }
 
 

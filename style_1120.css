@@ -20,6 +20,9 @@
         overflow: visible;
         text-indent: initial;
     }
+    .menu_link{
+        padding-right: 8px;
+    }
 
     /* Определяет стили для разделов */
     section {
@@ -49,12 +52,15 @@
         margin-top: 8px; /* Расстояние между верхним контентом и навигацией */
     }
 
+
+
     /* Восстанавливает изначальные стили для скрытого текста */
     .text-hidden {
-        font-size: initial;
-        text-indent: initial;
-        white-space: initial;
-        overflow: visible;
+        /*font-size: initial;*/
+        /*text-indent: initial;*/
+        /*white-space: initial;*/
+        /*overflow: visible;*/
+        display: inline;
     }
 
     /* Восстанавливает изначальные стили для навигации по горизонтали */
@@ -65,11 +71,26 @@
     /* Устанавливает перенос текста для списка навигации */
     .navigation__list {
         flex-wrap: wrap;
+        overflow-x: clip;
     }
 
     /* Устанавливает отступы для ссылок навигации */
     .navigation__link {
         padding: 8px 22px 8px 22px;
+    }
+
+    .article__content {
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 44%;
+    }
+
+    .article__image{
+        width: 47%;
+        margin-right: 28.65px;
+        margin-bottom: 49px;
+
     }
 
 
