@@ -5,52 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>1.3 Maket</title>
     <link rel="stylesheet" href="style.css">
-<!--    <link rel="stylesheet" href="style_320.css">-->
-<!--    <link rel="stylesheet" href="style_768.css">-->
-<!--    <link rel="stylesheet" href="style_1120.css">-->
-<!--    <link rel="stylesheet" href="fonts/stylesheet.css">-->
+    <link rel="stylesheet" href="style_320.css">
+    <link rel="stylesheet" href="style_768.css">
+    <!--    <link rel="stylesheet" href="style_1120.css">-->
+    <!--    <link rel="stylesheet" href="fonts/stylesheet.css">-->
 </head>
 <body>
 <!--This is the header-->
 <header class="header">
     <!--This is the menu burger-->
-    <nav class="header__element menu-burger">
-        <div hidden class="menu-burger__line"></div>
-        <div hidden class="menu-burger__line"></div>
-        <div hidden class="menu-burger__line"></div>
-    </nav>
+    <div class="header__wrapper header__wrapper-burger">
+        <nav class="header__element menu-burger">
+            <div hidden class="menu-burger__line"></div>
+            <div hidden class="menu-burger__line"></div>
+            <div hidden class="menu-burger__line"></div>
+        </nav>
+
+        <div class="header__element header__deliver--hidden deliver"></div>
+    </div>
+
 
     <!--This is the logotype-->
     <div class="header__element logo">
         <img src="image/Grouplogotype.svg" alt="logotype" class="logo__logotype">
     </div>
+    <div class="header__wrapper header__wrapper-menu">
+        <!--This is the first menu-->
+        <nav class="menu menu--primary">
+            <ul class="menu__list">
+                <!--This is the menu list-->
+                <li class="menu__item menu__item--hidden-link"><a href="#"
+                                                                  class="menu__link menu__link--call">Позвонить</a></li>
+                <li class="menu__item menu__item--hidden-link"><a href="#"
+                                                                  class="menu__link menu__link--write">Написать</a>
+                </li>
+                <li class="menu__item menu__item--hidden-link"><a href="#"
+                                                                  class="menu__link menu__link--login">Логин</a>
+                </li>
+            </ul>
+        </nav>
 
-    <!--This is the first menu-->
-    <nav class="menu menu--primary">
-        <ul class="menu__list">
+        <div class="header__deliver  deliver"></div>
+
+        <!--This is the second menu-->
+        <nav class="menu menu--secondary">
             <!--This is the menu list-->
-            <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                              class="menu__link menu__link--call">Позвонить</a></li>
-            <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                              class="menu__link menu__link--write">Написать</a>
-            </li>
-            <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                              class="menu__link menu__link--login">Логин</a>
-            </li>
-        </ul>
-    </nav>
-
-
-    <!--This is the second menu-->
-    <nav class="menu menu--secondary">
-        <!--This is the menu list-->
-        <ul class="menu__list">
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status">Статус
-                ремонта</a></li>
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application">Отправить
-                заявку</a></li>
-        </ul>
-    </nav>
+            <ul class="menu__list">
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status">Статус
+                    ремонта</a></li>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application">Отправить
+                    заявку</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
 </header>

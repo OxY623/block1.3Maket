@@ -1,15 +1,84 @@
-
-
 @media screen and (min-width: 320px) {
+    .header{
+        justify-content: space-around;
+    }
     .menu-burger {
         display: block;
+        margin-right: 17px;
+    }
+    .header__deliver--hidden{
+        display: none;
     }
 
     .menu {
         display: flex;
     }
+    .menu__link {
+        font-size: 0;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .menu--secondary {
+        position: relative;
+    }
+
+
+    .menu--primary{
+        display: none;
+    }
+
+    .main__title{
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
 
     .navigation {
+        padding: 0;
+        margin: 0;
+        margin-left: 16px;
+        width: 100%;
+        height: 42px;
+        overflow-x: auto; /* Разрешить горизонтальный скролл */
+        white-space: nowrap;
         display: flex;
     }
+
+    .navigation__list {
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+    }
+
+    .navigation__link {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        display: inline-block;
+        padding: 8px 16px;
+        color: rgb(126, 126, 130);
+        flex-wrap: nowrap;
+    }
+
+    .navigation__link--active {
+        border: 2px solid rgb(184, 255, 236);
+        border-radius: 6px;
+    }
+    .article{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .article__text--hidden{
+        font-size:0;
+        opacity: 0;
+        overflow: hidden;
+    }
+    .article__button{
+        margin-left:0;
+        margin-right:auto;
+    }
+
 }
