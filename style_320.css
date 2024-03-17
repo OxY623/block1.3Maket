@@ -1,9 +1,5 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 310px) {
 
-    /* Скрывает меню в блоке main, устанавливая его свойство отображения на none */
-
-
-    /* Выравнивает содержимое header равномерно с промежутками вокруг каждого элемента */
     .header {
         justify-content: space-around;
     }
@@ -12,19 +8,16 @@
         padding: 0;
     }
 
-    /* Отображает иконку бургера меню и добавляет отступ справа от нее */
+    /* Отображает иконку бургера */
     .menu-burger {
         display: block;
-        padding-right: 0px;
+
     }
-    .menu__list{
-        margin-left:20px;
-    }
-    /* Скрывает элемент в deliver */
+
+    /* Скрывает элемент deliver */
     .header__deliver--hidden {
         display: none;
     }
-
 
     .menu {
         display: flex;
@@ -32,18 +25,9 @@
 
     /* Скрывает текст ссылки на элемент меню */
     .menu__item--hidden-link {
-        /*font-size: 0;*/
-        /*text-indent: 100%;*/
-        /*white-space: nowrap;*/
-        /*overflow: hidden;*/
         position: relative;
         text-indent: -9999px;
         overflow: hidden;
-    }
-
-    /* Позиционирует вторичное меню относительно своего контейнера */
-    .menu--secondary {
-        position: relative;
     }
 
     /* Скрывает основное меню */
@@ -51,13 +35,6 @@
         display: none;
     }
 
-    /* Добавляет отступы сверху и снизу к основному заголовку */
-    .main__title {
-        margin-top: 24px;
-        margin-bottom: 24px;
-    }
-
-    /* Стилизует элемент навигации, позволяя горизонтальную прокрутку при необходимости и предотвращает перенос текста */
     .navigation {
         padding: 0;
         margin: 0;
@@ -71,10 +48,10 @@
 
     .navigation__list {
         flex-wrap: nowrap; /* Отключаем перенос элементов на новую строку */
-        overflow-x: auto; /* Добавляем горизонтальный скролл */
+        overflow-x: auto;
     }
 
-    /* Стилизует ссылки навигации с определенными свойствами шрифта, отступами и цветом и предотвращает перенос текста */
+
     .navigation__link {
         text-decoration: none;
         font-size: 16px;
@@ -87,7 +64,7 @@
         flex-wrap: nowrap;
     }
 
-    /* Стилизует активную ссылку навигации, такую как добавление рамки */
+    /* Стилизует активную ссылку навигации*/
     .navigation__link--active {
         border: 2px solid rgb(184, 255, 236);
         border-radius: 6px;
@@ -101,20 +78,11 @@
 
     /* Скрывает текст внутри статьи */
     .article__text--hidden {
-        /*font-size: 0;*/
-        /*opacity: 0;*/
-        /*overflow: hidden;*/
-        /*Применял разные способы скрыть текст*/
-        /*position: relative;*/
-        /*text-indent: -9999px;*/
-        /*overflow: hidden;*/
         display: none;
     }
     .article__text--primary,
     .article__text{
         margin-bottom: 0;
-        /*padding-left:16px;*/
-        /*padding-right:16px;*/
     }
 
     /* Регулирует отступ кнопкy статьи */
@@ -126,5 +94,7 @@
     .main__menu {
         display: none;
     }
+
+
 
 }

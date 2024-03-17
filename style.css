@@ -1,12 +1,9 @@
-/** {*/
-/*    border: 1px solid red;*/
-/*}*/
-
-.wrapper {
-    /*width: auto;*/
-    /*margin: 0 auto;*/
-    box-sizing: border-box;
+/*Исправления и доработка*/
+* {
+    border: 1px solid red;
 }
+
+
 
 
 /* Общие стили для всех элементов */
@@ -43,119 +40,105 @@ p {
     text-align: left;
 }
 
-
-.header {
+/*Элемент обертки бургера*/
+/* Стили */
+.wrapper {
     width: auto;
-    height: 88px;
-    background: rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+.header__wrapper {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    /*padding-left: 16px;*/
-    /*padding-right: 16px;*/
-    border-bottom: 1px solid rgb(217, 255, 245);
 }
 
 .header__element {
-    padding: 0;
-    margin: 0;
+    position: relative;
 }
 
-.header__wrapper-burger,.header__wrapper-menu {
-    width: auto;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    vertical-align: middle;
+.header__element.menu-burger::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url('image/burgerburger.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
+.header__deliver,.menu__deliver {
+    width: 2px;
+    height: 32px;
+    background: rgb(234, 234, 234);
+    margin-left: 20px;
+}
+/*Отключаю разделитель*/
+.header__deliver--hidden{
+    display: none;
 }
 /*Отключаю бургер в обертке вместе с разделителем*/
 .header__wrapper-burger {
     display: none;
 }
-
+/*logotype*/
 .logo {
     width: 97px;
     height: 51px;
 }
-/*Разделитель*/
-.deliver {
-    border-radius: 1px;
-    background: rgb(234, 234, 234);
-    width: 2px;
-    height: 32px;
-    vertical-align: center;
-}
 
+/*Блок меню с оберткой*/
 .menu {
     display: flex;
     justify-content: flex-start;
+    margin: 0 20px;
 }
-
 
 .menu__list {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    gap: 8px;
 }
 
-.menu__link,.menu__link:link,
-.menu__link:focus,
-.menu__link:active,
-.menu__link:hover{
+.menu__item {
+    margin: 0;
+    padding: 0;
+}
+
+.menu__link {
     text-decoration: none;
-    color: rgb(27, 28, 33);
+    color: rgb(27, 28, 33); /* Цвет текста */
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
     text-align: left;
-
-}
-
-.menu__item {
-    display: inline-block;
-    margin-left: 0;
-    margin-right: 16px;
-    padding: 0;
-    align-self: center;
-}
-
-.menu__item:last-child {
-    margin-right: 0;
-}
-
-.menu__link {
-    text-decoration: none;
     width: 100%;
-    text-align: center;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    flex-wrap: nowrap;
+    position: relative;
+}
+
+.menu__link span {
+    display: inline-block;
+    margin-left: 8px; /* Расстояние между иконкой и текстом */
 }
 
 
-.menu__link::after,
-.menu-burger::before {
+.menu__link::after {
     content: "";
     display: block;
     width: 40px;
     height: 40px;
-    text-align: center;
     background-position: center;
     background-repeat: no-repeat;
 
 }
 
-.menu-burger::before {
-    background-image: url('image/burgerburger.svg');
-    width: 40px;
-    height: 40px;
-}
 
 .menu__link--call::after {
     content: "";
@@ -180,6 +163,67 @@ p {
 .menu__link--application::after {
     content: "";
     background-image: url('image/checkstatussearch.svg');
+}
+
+.menu__deliver{
+    margin:0;
+}
+.menu--secondary,.menu--secondary .menu__list{
+    margin-right: 0;
+}
+
+/*HEADER*/
+.header {
+    width: auto;
+    height: 88px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid rgb(217, 255, 245);
+}
+/*Main*/
+.main {
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.main section {
+    padding: 0;
+    margin: 0;
+    width: auto;
+}
+
+/*Title*/
+.main__title {
+    width: auto;
+    text-align: left;
+    margin: 0;
+    padding: 0 16px;
+    position: relative;
+}
+/* Добавляет отступы сверху и снизу к основному заголовку */
+.main__title {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.main__title::before {
+    position: absolute;
+    content: "";
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);  /*посередине родительского элемента */
+    margin-right: 16px;
+    border-radius: 1px;
+    width: 4px;
+    height: 40px;
+    background: rgb(65, 246, 215);
 }
 
 .navigation {
@@ -218,39 +262,6 @@ p {
 .navigation__link--active {
     border: 2px solid rgb(184, 255, 236);
     border-radius: 6px;
-}
-
-.main {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
-
-.main section {
-    padding: 0;
-    margin: 0;
-}
-
-.main__title {
-    width: auto;
-    text-align: left;
-    margin: 0;
-    padding: 0 16px;
-    position: relative;
-}
-
-.main__title::before {
-    position: absolute;
-    content: "";
-    display: inline-block;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: 16px;
-    border-radius: 1px;
-    width: 4px;
-    height: 40px;
-    background: rgb(65, 246, 215);
 }
 
 .article {

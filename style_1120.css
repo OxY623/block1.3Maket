@@ -1,8 +1,9 @@
 /* Стили для мобильной версии (1120px) */
 @media screen and (min-width: 1120px) {
-    /* Скрывает заголовок */
+    /* Скрывает HEADER */
     .header {
         display: none;
+        margin-bottom: 10px;
     }
 
     /* Отображает основное меню как гибкие элементы с выравниванием по правому краю */
@@ -12,19 +13,15 @@
     }
 
     /* Отображает скрытую ссылку в пункте меню с изначальными стилями */
-    /*Не работает*/
     .menu__item--hidden-link {
-        /*font-size: initial;*/
-        /*text-indent: initial;*/
-        /*white-space: normal;*/
         overflow: visible;
         text-indent: initial;
     }
-    .menu_link{
-        padding-right: 8px;
+
+    .main{
+        margin-right: 0;
     }
 
-    /* Определяет стили для разделов */
     section {
         display: flex;
         flex-direction: row;
@@ -52,14 +49,8 @@
         margin-top: 8px; /* Расстояние между верхним контентом и навигацией */
     }
 
-
-
     /* Восстанавливает изначальные стили для скрытого текста */
     .text-hidden {
-        /*font-size: initial;*/
-        /*text-indent: initial;*/
-        /*white-space: initial;*/
-        /*overflow: visible;*/
         display: inline;
     }
 
@@ -88,9 +79,6 @@
 
     .article__image{
         width: 47%;
-        /*margin-right: 28.65px;*/
-        /*margin-bottom: 49px;*/
-
     }
 
 
