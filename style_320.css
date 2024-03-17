@@ -3,6 +3,7 @@
     .header {
         justify-content: space-around;
     }
+
     .header__wrapper-burger {
         display: block;
         padding: 0;
@@ -80,8 +81,9 @@
     .article__text--hidden {
         display: none;
     }
+
     .article__text--primary,
-    .article__text{
+    .article__text {
         margin-bottom: 0;
     }
 
@@ -94,7 +96,6 @@
     .main__menu {
         display: none;
     }
-
 
 
 }

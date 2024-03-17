@@ -3,9 +3,6 @@
     border: 1px solid red;
 }
 
-
-
-
 /* Общие стили для всех элементов */
 body {
     font-family: "TT Lakes", sans-serif;
@@ -66,20 +63,23 @@ p {
     background-repeat: no-repeat;
 }
 
-.header__deliver,.menu__deliver {
+.header__deliver, .menu__deliver {
     width: 2px;
     height: 32px;
     background: rgb(234, 234, 234);
     margin-left: 20px;
 }
+
 /*Отключаю разделитель*/
-.header__deliver--hidden{
+.header__deliver--hidden {
     display: none;
 }
+
 /*Отключаю бургер в обертке вместе с разделителем*/
 .header__wrapper-burger {
     display: none;
 }
+
 /*logotype*/
 .logo {
     width: 97px;
@@ -165,10 +165,11 @@ p {
     background-image: url('image/checkstatussearch.svg');
 }
 
-.menu__deliver{
-    margin:0;
+.menu__deliver {
+    margin: 0;
 }
-.menu--secondary,.menu--secondary .menu__list{
+
+.menu--secondary, .menu--secondary .menu__list {
     margin-right: 0;
 }
 
@@ -185,6 +186,7 @@ p {
     padding-right: 16px;
     border-bottom: 1px solid rgb(217, 255, 245);
 }
+
 /*Main*/
 .main {
     margin: 0;
@@ -206,6 +208,7 @@ p {
     padding: 0 16px;
     position: relative;
 }
+
 /* Добавляет отступы сверху и снизу к основному заголовку */
 .main__title {
     margin-top: 24px;
@@ -218,7 +221,7 @@ p {
     display: inline-block;
     left: 0;
     top: 50%;
-    transform: translateY(-50%);  /*посередине родительского элемента */
+    transform: translateY(-50%); /*посередине родительского элемента */
     margin-right: 16px;
     border-radius: 1px;
     width: 4px;
@@ -271,7 +274,8 @@ p {
     justify-content: center;
     align-items: center;
 }
-.article__content{
+
+.article__content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
