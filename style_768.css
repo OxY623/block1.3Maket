@@ -4,20 +4,24 @@
     .menu--primary {
         display: flex;
     }
+
     /* Скрывает основное меню */
     .main__menu {
         display: none;
     }
+
     /*Отключаю разделитель*/
     .header__deliver--hidden {
         display: block;
     }
+
     /*Раставляем элементы в HEADER*/
     .header {
         justify-content: flex-start;
     }
-    .header__wrapper{
-        margin-left:0;
+
+    .header__wrapper {
+        margin-left: 0;
         margin-right: 20.73px;
     }
 
@@ -25,10 +29,7 @@
         margin-right: 0;
         margin-left: auto;
     }
-/*На шаблоне отступ решил тоже его сделать.*/
-    main{
-        margin-right: 15px;
-    }
+
 
     /* Отображает скрытый текст внутри статьи */
     .article__text--hidden {
@@ -37,40 +38,31 @@
 
 
     .article {
-        display: flex;
+        width: auto;
         flex-direction: row;
-        width: 100%;
         justify-content: space-between;
-        margin:32px 25px 40px 24px;
+        padding-top: 32px;
+        padding-bottom: 40px;
+        padding-left: 25px;
+        padding-right: 25px;
+        gap: 48px;
     }
+
     .article__text:first-of-type {
         margin-top: 0;
     }
 
-
-    .article__text {
-        width: auto;
-    }
-
-
     .article__content {
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 40%;
+        gap: 10px;
+        margin: 0;
     }
 
+    .article__image {
+
+    }
 
     .text-hidden {
         display: none;
-    }
-
-    .article__image{
-        width: 46%;
-        height: auto;
-
     }
 
 

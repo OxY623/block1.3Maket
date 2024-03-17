@@ -1,9 +1,13 @@
 /* Стили для мобильной версии (1120px) */
 @media screen and (min-width: 1120px) {
     /* Скрывает HEADER */
+
     .header {
         display: none;
-        margin-bottom: 10px;
+    }
+
+    .menu__link span{
+        display: initial;
     }
 
     /* Отображает основное меню как гибкие элементы с выравниванием по правому краю */
@@ -22,7 +26,7 @@
         margin-right: 0;
     }
 
-    section {
+    header {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -40,19 +44,26 @@
     .main__menu {
         flex: 1;
         text-align: right;
+        margin-top: 42px;
+        margin-bottom: 0;
         margin-left: 20px; /* Расстояние между заголовком и меню */
+
+    }
+
+    /* Добавляет отступы сверху и снизу к основному заголовку */
+    .main__title {
+        margin-top: 42px;
+        margin-bottom: 0;
     }
 
     /* Определяет стили для навигации */
     .navigation {
+        height: 82px;
         width: 100%;
         margin-top: 8px; /* Расстояние между верхним контентом и навигацией */
     }
 
-    /* Восстанавливает изначальные стили для скрытого текста */
-    .text-hidden {
-        display: inline;
-    }
+
 
     /* Восстанавливает изначальные стили для навигации по горизонтали */
     .navigation {
@@ -64,21 +75,29 @@
         flex-wrap: wrap;
         overflow-x: clip;
     }
-
-    /* Устанавливает отступы для ссылок навигации */
-    .navigation__link {
-        padding: 8px 22px 8px 22px;
+    .navigation__link-hidden{
+        display: none;
     }
-
-    .article__content {
-        height: 100%;
+    .article {
+        width: auto;
+        flex-direction: row;
         justify-content: space-between;
-        align-items: flex-start;
-        width: 44%;
+        padding-top:7px;
+        padding-bottom: 49px;
+        padding-left: 35px;
+        padding-right: 28.65px;
+        gap: 36px;
+    }
+    .article__content {
+        gap: 13.78px;
+        margin: 0;
+        width: 80%;
     }
 
-    .article__image {
-        width: 47%;
+
+    /* Восстанавливает изначальные стили для скрытого текста */
+    .text-hidden {
+        display: inline;
     }
 
 

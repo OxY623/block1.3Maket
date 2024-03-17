@@ -3,125 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Dev</title>
-<!--    <link rel="stylesheet" href="style.css">-->
+    <link rel="stylesheet" href="style.css">
 <!--    <link rel="stylesheet" href="style_320.css">-->
 <!--    <link rel="stylesheet" href="style_768.css">-->
 <!--    <link rel="stylesheet" href="style_1120.css">-->
 <!--    <link rel="stylesheet" href="fonts/stylesheet.css">-->
     <style>
-        /* Стили */
-        .wrapper {
-            width: auto;
-            box-sizing: border-box;
-        }
 
-        .header__wrapper {
-            display: flex;
-            align-items: center;
-        }
-
-        .menu {
-            display: flex;
-            justify-content: flex-start;
-            margin: 0 -20px;
-        }
-
-        .menu__list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            display: flex;
-            gap: 16px;
-        }
-
-        .menu__item {
-            margin: 0;
-            padding: 0;
-        }
-
-        .menu__link {
-            text-decoration: none;
-            color: rgb(27, 28, 33); /* Цвет текста */
-            font-size: 16px; /* Размер шрифта */
-            font-weight: 500; /* Толщина шрифта */
-            line-height: 24px; /* Межстрочный интервал */
-            letter-spacing: -0.2px; /* Межбуквенный интервал */
-            text-align: left; /* Выравнивание текста */
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .menu__link span {
-            display: inline-block;
-            margin-left: 8px; /* Расстояние между иконкой и текстом */
-        }
-
-        .menu__link::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .menu__link--call::after {
-            background-image: url('image/callcall.svg');
-        }
-
-        .menu__link--write::after {
-            background-image: url('image/chatmessage.svg');
-        }
-
-        .menu__link--login::after {
-            background-image: url('image/profileuser.svg');
-        }
-
-        .menu__link--status::after {
-            background-image: url('image/repairsetting.svg');
-        }
-
-        .menu__link--application::after {
-            background-image: url('image/checkstatussearch.svg');
-        }
-
-        .header__deliver {
-            width: 2px;
-            height: 32px;
-            background: rgb(234, 234, 234);
-            margin: 0 20px;
-        }
     </style>
 </head>
 <body>
 
-<div class="header__wrapper header__wrapper-menu wrapper">
-    <!-- Первое меню -->
-    <nav class="menu menu--primary">
-        <ul class="menu__list">
-            <!-- Элементы первого меню -->
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--call"><span>Позвонить</span></a></li>
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--write"><span>Написать</span></a></li>
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--login"><span>Логин</span></a></li>
-        </ul>
-    </nav>
-    <!-- Разделитель -->
-    <div class="header__deliver  deliver"></div>
-
-    <!-- Второе меню -->
-    <nav class="menu menu--secondary">
-        <!-- Элементы второго меню -->
-        <ul class="menu__list">
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status"><span>Статус ремонта</span></a></li>
-            <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application"><span>Отправить заявку</span></a></li>
-        </ul>
-    </nav>
+<div class="article__content">
+    <h3 hidden>О нас</h3>
+    <!-- Текст статьи -->
+    <p class="article__text article__text--primary text">
+        Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+        гарантией производителя.
+    </p>
+    <!-- Скрытый текст -->
+    <p class="article__text article__text--hidden text">
+        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
+        <!--Скрытый элемент текста-->
+        <span class="text-hidden"> ,
+                        что подтверждает
+                        большое количество
+                        постоянных клиентов.
+                        Мы гордимся тем, что к
+                        нам
+                        обращаются по
+                        рекомендациям и, в
+                        свою очередь, советуют
+                        нас родным и
+                        близким.</span>
+    </p>
+    <!-- Кнопка "Читать далее" -->
+    <button type="button" class="article__button button_read-more">Читать далее</button>
 </div>
 
 
