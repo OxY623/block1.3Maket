@@ -1,22 +1,17 @@
-/* Стили для мобильной версии (1120px) */
 @media screen and (min-width: 1120px) {
-    /* Скрывает HEADER */
-
     .header {
         display: none;
     }
 
-    .menu__link span{
+    .menu__link span {
         display: initial;
     }
 
-    /* Отображает основное меню как гибкие элементы с выравниванием по правому краю */
     .main__menu {
         display: flex;
         justify-content: flex-end;
     }
 
-    /* Отображает скрытую ссылку в пункте меню с изначальными стилями */
     .menu__item--hidden-link {
         overflow: visible;
         text-indent: initial;
@@ -34,71 +29,61 @@
         flex-wrap: wrap;
     }
 
-    /* Устанавливает флекс-расширение для заголовка и выравнивание его к правому краю */
     .main__title {
         flex: 1;
-        margin-right: 20px; /* Расстояние между заголовком и меню */
+        margin-right: 20px;
     }
 
-    /* Устанавливает флекс-расширение для основного меню и выравнивание его к правому краю */
     .main__menu {
         flex: 1;
         text-align: right;
         margin-top: 42px;
         margin-bottom: 0;
-        margin-left: 20px; /* Расстояние между заголовком и меню */
-
+        margin-left: 20px;
     }
 
-    /* Добавляет отступы сверху и снизу к основному заголовку */
     .main__title {
         margin-top: 42px;
         margin-bottom: 0;
     }
 
-    /* Определяет стили для навигации */
     .navigation {
         height: 82px;
         width: 100%;
-        margin-top: 8px; /* Расстояние между верхним контентом и навигацией */
+        margin-top: 8px;
     }
 
-
-
-    /* Восстанавливает изначальные стили для навигации по горизонтали */
     .navigation {
         overflow-x: initial;
     }
 
-    /* Устанавливает перенос текста для списка навигации */
     .navigation__list {
         flex-wrap: wrap;
         overflow-x: clip;
     }
-    .navigation__link-hidden{
+
+    .navigation__link-hidden {
         display: none;
     }
+
     .article {
         width: auto;
         flex-direction: row;
         justify-content: space-between;
-        padding-top:7px;
+        padding-top: 7px;
         padding-bottom: 49px;
         padding-left: 35px;
         padding-right: 28.65px;
         gap: 36px;
     }
+
     .article__content {
         gap: 13.78px;
         margin: 0;
         width: 80%;
     }
 
-
-    /* Восстанавливает изначальные стили для скрытого текста */
     .text-hidden {
         display: inline;
     }
-
-
 }

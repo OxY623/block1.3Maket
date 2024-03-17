@@ -1,41 +1,65 @@
-/* Стили для мобильной версии (768px) */
 @media screen and (min-width: 768px) {
-    /* Отображает основное меню как гибкие элементы */
     .menu--primary {
         display: flex;
     }
 
-    /* Скрывает основное меню */
     .main__menu {
         display: none;
     }
 
-    /*Отключаю разделитель*/
     .header__deliver--hidden {
         display: block;
     }
 
-    /*Раставляем элементы в HEADER*/
     .header {
-        justify-content: flex-start;
+        justify-content: space-around;
     }
 
-    .header__wrapper {
-        margin-left: 0;
-        margin-right: 20.73px;
+    .menu__item--hidden-link {
+        position: relative;
+        text-indent: -9999px;
+        overflow: hidden;
     }
 
-    .header__wrapper-menu {
-        margin-right: 0;
-        margin-left: auto;
+    .menu__link span {
+        display: none;
     }
 
+    .menu--primary {
+        display: none;
+    }
 
-    /* Отображает скрытый текст внутри статьи */
+    .navigation {
+        width: 100%;
+        min-height: 42px;
+        display: flex;
+    }
+
+    .navigation__list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .navigation__link {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        display: inline-block;
+        padding: 8px 16px;
+        color: rgb(126, 126, 130);
+        flex-wrap: nowrap;
+    }
+
+    .navigation__link--active {
+        border: 2px solid rgb(184, 255, 236);
+        border-radius: 6px;
+    }
+
     .article__text--hidden {
         display: initial;
     }
-
 
     .article {
         width: auto;
@@ -57,13 +81,7 @@
         margin: 0;
     }
 
-    .article__image {
-
-    }
-
     .text-hidden {
         display: none;
     }
-
-
 }
