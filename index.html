@@ -12,7 +12,7 @@
 </head>
 <body>
 <!-- Это верхняя часть страницы -->
-<header class="header">
+<header class="header header--padding">
     <!-- Бургер-меню -->
     <div class="header__wrapper wrapper">
         <nav class="header__element menu-burger">
@@ -25,12 +25,11 @@
         <div class="header__deliver header__deliver--hidden deliver"></div>
     </div>
 
-
     <!-- Логотип -->
     <div class="header__element logo">
         <img src="image/Grouplogotype.svg" alt="logotype" class="logo__logotype">
     </div>
-    <div class="header__wrapper header__wrapper-menu header__wrapper-menu--pozition wrapper">
+    <div class="header__wrapper header__wrapper-menu wrapper">
         <!-- Первое меню -->
         <nav class="menu menu--primary">
             <ul class="menu__list">
@@ -44,7 +43,7 @@
             </ul>
         </nav>
         <!-- Разделитель -->
-        <div class="menu__deliver menu__deliver--hidden  deliver"></div>
+        <div class="menu__deliver menu__deliver--hidden deliver"></div>
 
         <!-- Второе меню -->
         <nav class="menu menu--secondary">
@@ -52,39 +51,33 @@
             <ul class="menu__list">
                 <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status"><span>Статус ремонта</span></a>
                 </li>
-                <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                                  class="menu__link menu__link--application"><span>Отправить заявку</span></a>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application"><span>Отправить заявку</span></a>
                 </li>
             </ul>
         </nav>
     </div>
-
-
 </header>
 <!-- Основное содержимое страницы -->
 <main class="main">
     <header>
-        <h1 class="main__title">Услуги и сервисы</h1>
-        <nav class="main__menu menu menu--secondary">
+        <h1 class="main__title main__title--padding main__title--position">Услуги и сервисы</h1>
+        <nav class="main__menu main__menu--hidden main__menu--position menu menu--secondary">
             <!-- Меню -->
             <ul class="menu__list">
                 <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status"><span>Статус
                     ремонта</span></a></li>
-                <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                                  class="menu__link menu__link--application"><span>Отправить
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application"><span>Отправить
                     заявку</span></a></li>
             </ul>
         </nav>
         <!-- Навигация -->
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__item navigation__item--active"><a href="#"
-                                                                         class="navigation__link navigation__link--active">Ремонтируемые
+                <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link navigation__link--active">Ремонтируемые
                     бренды</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link navigation__link-hidden">Дополнительные
                     услуги</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Ремонтируемые устройства</a></li>
-
                 <li class="navigation__item"><a href="#" class="navigation__link">Цены на услуги</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Адреса сервисных центров</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Специальные цены</a></li>
@@ -93,7 +86,7 @@
         </nav>
     </header>
     <section>
-        <!-- Содержимое второй секции -->
+
         <h2 hidden>Это главная секция</h2>
         <!-- Статья -->
         <article class="article">
@@ -131,4 +124,3 @@
 </main>
 </body>
 </html>
-
