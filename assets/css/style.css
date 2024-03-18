@@ -43,7 +43,7 @@ body {
     display: block;
     width: 40px;
     height: 40px;
-    background-image: url('image/burgerburger.svg');
+    background-image: url('assets/images/burgerburger.svg');
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -127,23 +127,23 @@ body {
 }
 
 .menu__link--call::after {
-    background-image: url('image/callcall.svg');
+    background-image: url('assets/images/callcall.svg');
 }
 
 .menu__link--write::after {
-    background-image: url('image/chatmessage.svg');
+    background-image: url('assets/images/chatmessage.svg');
 }
 
 .menu__link--login::after {
-    background-image: url('image/profileuser.svg');
+    background-image: url('assets/images/profileuser.svg');
 }
 
 .menu__link--status::after {
-    background-image: url('image/repairsetting.svg');
+    background-image: url('assets/images/repairsetting.svg');
 }
 
 .menu__link--application::after {
-    background-image: url('image/checkstatussearch.svg');
+    background-image: url('assets/images/checkstatussearch.svg');
 }
 
 .menu__deliver {
@@ -286,7 +286,7 @@ body {
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url('image/expandread-more.svg');
+    background-image: url('assets/images/expandread-more.svg');
     vertical-align: middle;
     background-position: center;
     background-repeat: no-repeat;
