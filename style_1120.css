@@ -76,8 +76,6 @@
 
     .article {
         width: auto;
-        flex-direction: row;
-        justify-content: space-between;
         padding-top: 7px;
         padding-bottom: 49px;
         padding-left: 35px;

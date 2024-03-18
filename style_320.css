@@ -21,32 +21,12 @@
         display: none;
     }
 
-    .navigation {
-        padding: 0;
-        margin-left: 0;
-        width: 100%;
-        height: 42px;
-        overflow-x: auto;
-        white-space: nowrap;
-        display: flex;
-    }
 
     .navigation__list {
         flex-wrap: nowrap;
         overflow-x: auto;
     }
 
-    .navigation__link {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        display: inline-block;
-        padding: 8px 16px;
-        color: rgb(126, 126, 130);
-        flex-wrap: nowrap;
-    }
 
     .navigation__link--active {
         border: 2px solid rgb(184, 255, 236);

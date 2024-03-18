@@ -17,7 +17,6 @@ body {
 
 .wrapper {
     width: auto;
-    box-sizing: border-box;
 }
 
 /* HEADER */
@@ -204,11 +203,14 @@ body {
     background: rgb(65, 246, 215);
 }
 
-
 .navigation {
     width: 100%;
-    min-height: 42px;
-    display: inline;
+    padding: 0;
+    margin-left: 0;
+    height: 43px;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
 }
 
 .navigation__list {

@@ -13,6 +13,8 @@
 
     .header {
         justify-content: space-around;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .menu__item--hidden-link {
@@ -39,18 +41,7 @@
         flex-wrap: nowrap;
         overflow-x: auto;
     }
-
-    .navigation__link {
-        text-decoration: none;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        display: inline-block;
-        padding: 8px 16px;
-        color: rgb(126, 126, 130);
-        flex-wrap: nowrap;
-    }
+    
 
     .navigation__link--active {
         border: 2px solid rgb(184, 255, 236);
