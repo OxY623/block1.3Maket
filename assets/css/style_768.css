@@ -92,6 +92,10 @@
         gap: 8px;
     }
 
+    .article__content {
+        align-self: flex-start;
+    }
+
     /*.article__text:first-of-type {*/
     /*    margin-top: 0;*/
     /*}*/
