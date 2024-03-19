@@ -12,78 +12,55 @@
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
 </head>
 <body>
-<!-- Это верхняя часть страницы -->
 <header class="header header--padding">
-    <!-- Бургер-меню -->
     <div class="header__wrapper wrapper">
         <nav class="header__element menu-burger">
-            <!-- Возможный контент бургер меню -->
             <div hidden class="menu-burger__line"></div>
             <div hidden class="menu-burger__line"></div>
             <div hidden class="menu-burger__line"></div>
         </nav>
-        <!-- Разделитель -->
         <div class="header__deliver header__deliver--hidden deliver"></div>
     </div>
-
-    <!-- Логотип -->
-<!--    <div class="header__element logo">-->
-<!--        <img src="assets/images/Grouplogotype.svg" alt="Логотип компании CPS" class="logo__logotype">-->
-<!--    </div>-->
     <div class="header__element logo">
-        <a href="#" aria-label="Посетить сайт компании">
+        <a href="#" aria-label="Посетить сайт компании" class="logo__link">
             <img src="assets/images/Grouplogotype.svg" alt="Логотип компании CPS" class="logo__logotype">
         </a>
     </div>
-
     <div class="header__wrapper header__wrapper-menu wrapper">
-        <!-- Первое меню -->
         <nav class="menu menu--primary">
             <ul class="menu__list">
-                <!-- Элементы первого меню -->
-                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--call" aria-label="Позвонить компании"><span>Позвонить</span></a>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--call menu__link--hide-text" aria-label="Позвонить компании"><span>Позвонить</span></a>
                 </li>
-                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--write" aria-label="Написать компании"><span>Написать</span></a>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--write menu__link--hide-text" aria-label="Написать компании"><span>Написать</span></a>
                 </li>
-                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--login" aria-label="Зайти в свой кабинет"><span>Логин</span></a>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--login menu__link--hide-text" aria-label="Зайти в свой кабинет"><span>Логин</span></a>
                 </li>
             </ul>
         </nav>
-        <!-- Разделитель -->
         <div class="menu__deliver menu__deliver--hidden deliver"></div>
-
-        <!-- Второе меню -->
         <nav class="menu menu--secondary">
-            <!-- Элементы второго меню -->
             <ul class="menu__list">
-                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status"><span>Статус ремонта</span></a>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status menu__link--hide-text"><span>Статус ремонта</span></a>
                 </li>
-                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application"><span>Отправить заявку</span></a>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application menu__link--hide-text"><span>Отправить заявку</span></a>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
-<!-- Основное содержимое страницы -->
 <main class="main">
-    <header>
+    <header class="main__header">
         <h1 class="main__title main__title--padding main__title--position">Услуги и сервисы</h1>
         <nav class="main__menu main__menu--hidden main__menu--position menu menu--secondary">
-            <!-- Меню -->
             <ul class="menu__list">
-                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status"><span>Статус
-                    ремонта</span></a></li>
-                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application"><span>Отправить
-                    заявку</span></a></li>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status"><span>Статус ремонта</span></a></li>
+                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--application"><span>Отправить заявку</span></a></li>
             </ul>
         </nav>
-        <!-- Навигация -->
         <nav class="navigation">
             <ul class="navigation__list">
-                <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link navigation__link--active">Ремонтируемые
-                    бренды</a></li>
-                <li class="navigation__item"><a href="#" class="navigation__link navigation__link-hidden">Дополнительные
-                    услуги</a></li>
+                <li class="navigation__item navigation__item--active"><a href="#" class="navigation__link navigation__link--active">Ремонтируемые бренды</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link navigation__link-hidden">Дополнительные услуги</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Ремонтируемые устройства</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Цены на услуги</a></li>
                 <li class="navigation__item"><a href="#" class="navigation__link">Адреса сервисных центров</a></li>
@@ -92,41 +69,20 @@
             </ul>
         </nav>
     </header>
-    <section>
-
+    <section class="main__section">
         <h2 hidden>Это главная секция</h2>
-        <!-- Статья -->
         <article class="article">
             <div class="article__content">
                 <h3 hidden>О нас</h3>
-                <!-- Текст статьи -->
-                <p class="article__text article__text--primary text">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-                    Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-                    гарантией производителя.
+                <p class="article__text text">
+                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                     <br> <br>
+                    <span class="text__hidden-part">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
                 </p>
-                <!-- Скрытый текст -->
-                <p class="article__text article__text--hidden text">
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера
-                    <!--Скрытый элемент текста-->
-                    <span class="text-hidden"> ,
-                        что подтверждает
-                        большое количество
-                        постоянных клиентов.
-                        Мы гордимся тем, что к
-                        нам
-                        обращаются по
-                        рекомендациям и, в
-                        свою очередь, советуют
-                        нас родным и
-                        близким.</span>
-                </p>
-                <!-- Кнопка "Читать далее" -->
                 <button type="button" class="article__button button_read-more">Читать далее</button>
             </div>
             <img src="assets/images/Picture%20Copybackground-logotype.jpg" alt="Это фото логотипа компании" class="article__image">
         </article>
-
     </section>
 </main>
 </body>

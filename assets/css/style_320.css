@@ -1,72 +1,43 @@
 @media screen and (min-width: 319px) {
-    .menu-burger {
-        display: block;
-    }
 
-    .main header{
-        padding-left:16px;
-    }
-
-    .menu__item--hidden-link {
-        position: relative;
-        text-indent: -9999px;
-        overflow: hidden;
-    }
-
-    .menu__link span {
+    .main__menu--hidden{
         display: none;
     }
-
-    .menu--primary {
-        display: none;
-    }
-
 
     .navigation__list {
         flex-wrap: nowrap;
         overflow-x: auto;
     }
 
+    .article{
+        align-items: center;
+    }
 
-    .navigation__link--active {
-        border: 2px solid rgb(184, 255, 236);
-        border-radius: 6px;
+    .article__text{
+        max-height: 90px;
+        width: 288px;
+        overflow: hidden;
+    }
+
+    .main__section{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .main__header{
+        padding-left:16px;
+        padding-bottom: 24px;
+    }
+
+    .main__title::before{
+        margin-left:-16px;
     }
 
     .article {
-        width: auto;
-        padding-top: 24px;
-        padding-bottom: 35px;
-        row-gap: 16px;
+        gap:16px;
     }
 
-    .article__content {
-        margin-left: 16px;
-        margin-right: 16px;
-    }
-
-    .article__text--hidden {
-        display: none;
-    }
-
-    .article__text--primary,
-    .article__text {
-        margin: 0;
-    }
-
-    .article__button {
-        margin-left: 0;
-        margin-right: auto;
-    }
-
-    .main__menu {
-        display: none;
-    }
-
-    .main__title::before {
-
-        left: -15px;
-    }
 
 
 }
