@@ -2,7 +2,8 @@
     .header {
         display: none;
     }
-    .navigation__link-hidden{
+
+    .navigation__link-hidden {
         display: none;
     }
 
@@ -33,16 +34,16 @@
         padding: 18px 35px 0 35px;
     }
 
-    .menu__link span{
-        margin-right:8px;
+    .menu__link span {
+        margin-right: 8px;
     }
 
-    .main__header{
+    .main__header {
         padding-top: 42px;
         padding-left: 32px;
         padding-right: 32px;
         padding-bottom: 7px;
-        gap:8px;
+        gap: 8px;
     }
 
     .main__title {
@@ -53,27 +54,28 @@
     .article {
         padding-left: 35px;
         padding-right: 35px;
-        padding-bottom:49px;
+        padding-bottom: 49px;
         vertical-align: top;
     }
-    .article__text{
+
+    .article__text {
         max-height: 160px;
         width: 490px;
         overflow: hidden;
     }
-    .article__content{
+
+    .article__content {
         align-self: flex-start;
     }
+
     /*.main__title {*/
     /*    flex: 1;*/
     /*    margin-right: 20px;*/
     /*    padding-left: 0;*/
     /*}*/
-
     /*.main__title::before{*/
     /*    left: -34px;*/
     /*}*/
-
     /*.main__menu {*/
     /*    flex: 1;*/
     /*    text-align: right;*/
@@ -81,18 +83,15 @@
     /*    margin-bottom: 0;*/
     /*    margin-left: 20px;*/
     /*}*/
-
     /*.main__title {*/
     /*    margin-top: 42px;*/
     /*    margin-bottom: 0;*/
     /*}*/
-
     /*.navigation {*/
     /*    height: 82px;*/
     /*    width: 100%;*/
     /*    margin-top: 8px;*/
     /*}*/
-
     .navigation {
         overflow-x: initial;
         /*padding: 0;*/
@@ -108,7 +107,6 @@
     /*.navigation__link-hidden {*/
     /*    display: none;*/
     /*}*/
-
     /*.article {*/
     /*    width: auto;*/
     /*    padding-top: 7px;*/
@@ -117,17 +115,14 @@
     /*    padding-right: 28.65px;*/
     /*    gap: 36px;*/
     /*}*/
-
     /*.article__content {*/
     /*    gap: 13.78px;*/
     /*    margin: 0;*/
     /*    width: 80%;*/
     /*}*/
-
     /*.text-hidden {*/
     /*    display: inline;*/
     /*}*/
-
     /*.main header{*/
     /*    padding-left: 33px;*/
     /*}*/

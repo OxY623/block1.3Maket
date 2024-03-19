@@ -1,6 +1,6 @@
 @media screen and (min-width: 319px) {
 
-    .main__menu--hidden{
+    .main__menu--hidden {
         display: none;
     }
 
@@ -9,35 +9,34 @@
         overflow-x: auto;
     }
 
-    .article{
+    .article {
         align-items: center;
     }
 
-    .article__text{
+    .article__text {
         max-height: 90px;
         width: 288px;
         overflow: hidden;
     }
 
-    .main__section{
+    .main__section {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
     }
 
-    .main__header{
-        padding-left:16px;
+    .main__header {
+        padding-left: 16px;
         padding-bottom: 24px;
     }
 
-    .main__title::before{
-        margin-left:-16px;
+    .main__title::before {
+        margin-left: -16px;
     }
 
     .article {
-        gap:16px;
+        gap: 16px;
     }
-
 
 
 }

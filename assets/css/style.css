@@ -7,6 +7,7 @@
 html {
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
@@ -71,7 +72,7 @@ body {
 .header__wrapper-menu {
     margin-right: 0;
     margin-left: auto;
-    gap:20px;
+    gap: 20px;
 }
 
 .logo {
@@ -118,9 +119,9 @@ body {
 }
 
 /*.menu__link span {*/
-    /*display: inline-block;*/
-    /*margin-left: 8px;*/
-    /*padding-right: 8px;*/
+/*display: inline-block;*/
+/*margin-left: 8px;*/
+/*padding-right: 8px;*/
 /*}*/
 
 /*menu__link--hide-text{*/
@@ -320,7 +321,7 @@ body {
 
 /*Cкрывать на экранах менее 320px*/
 @media screen and (max-width: 319px) {
-    html body{
+    html body {
         display: none;
     }
 }
