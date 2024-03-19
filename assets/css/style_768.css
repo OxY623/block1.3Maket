@@ -17,11 +17,11 @@
         padding-right: 24px;
     }
 
-    .menu__item--hidden-link {
-        position: relative;
-        text-indent: -9999px;
-        overflow: hidden;
-    }
+    /*.menu__item--hidden-link {*/
+    /*    position: relative;*/
+    /*    text-indent: -9999px;*/
+    /*    overflow: hidden;*/
+    /*}*/
 
     .menu__link span {
         display: none;
