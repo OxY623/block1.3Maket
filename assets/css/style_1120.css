@@ -27,11 +27,11 @@
         background-size: cover;
     }
 
-    .menu__list li:first-child .menu__button::after{
+    .menu__list li:first-child .menu__button::after {
         background-image: url("../images/repairsetting.svg");
     }
 
-    .menu__list li:last-child .menu__button::after{
+    .menu__list li:last-child .menu__button::after {
         background-image: url("../images/checkstatussearch.svg");
     }
 
@@ -40,12 +40,12 @@
         margin-bottom: 0;
     }
 
-    .main__wrapper{
+    .main__wrapper {
         flex-direction: row;
         align-items: center;
     }
 
-    .main__menu--hidden{
+    .main__menu--hidden {
         display: flex;;
     }
 
@@ -63,25 +63,30 @@
         flex-basis: 490px;
         overflow: hidden;
     }
-    .article__content--size{
+
+    .article__content--size {
         padding-left: 32px;
     }
 
-    .article__text--size{
+    .article__text--size {
         width: 490px;
         min-height: 160px;
 
     }
-.main__section{
-    padding-bottom: 35px;
-}
+
+    .main__section {
+        padding-bottom: 35px;
+    }
+
     .navigation {
         overflow-x: initial;
         height: 82px;
     }
-    .navigation__link-hidden{
-        display:none;
+
+    .navigation__link-hidden {
+        display: none;
     }
+
     .navigation__list {
         flex-wrap: wrap;
         overflow-x: clip;

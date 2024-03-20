@@ -4,15 +4,15 @@
         overflow-x: hidden;
     }
 
-    .article__text--size{
+    .article__text--size {
         width: 288px;
         max-height: 90px;
         overflow: hidden;
         justify-content: center;
     }
 
-    .article__content--size{
-        padding-left:16px;
+    .article__content--size {
+        padding-left: 16px;
         padding-bottom: 16px;
     }
 

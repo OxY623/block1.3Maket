@@ -174,7 +174,7 @@
 
 .main__title::before {
     content: "";
-    display: block; /* Добавляем это свойство */
+    display: block;
     position: absolute;
     left: -13px;
     top: 50%;
@@ -258,8 +258,8 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    display: flex; /* Добавляем свойство display: flex; для корректного позиционирования */
-    align-items: center; /* Чтобы выровнять изображение по центру вертикально */
+    display: flex;
+    align-items: center;
     flex-wrap: nowrap;
 }
 
@@ -268,9 +268,9 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    margin-right: 8px; /* Отступ между изображением и текстом */
+    margin-right: 8px;
     background-image: url('../images/expandread-more.svg');
-    background-size: cover; /* Растягиваем изображение на всю область */
+    background-size: cover;
 }
 
 .article__image {

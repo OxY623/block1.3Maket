@@ -1,8 +1,9 @@
 @media screen and (min-width: 767px) {
-    .header--padding{
+    .header--padding {
         padding-left: 24px;
         padding-right: 24px;
     }
+
     .menu__button {
         display: flex;
     }
