@@ -114,21 +114,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    /*overflow: hidden;*/
-    /*position: relative;*/
+   
 }
 
-/*.menu__link span {*/
-/*display: inline-block;*/
-/*margin-left: 8px;*/
-/*padding-right: 8px;*/
-/*}*/
 
-/*menu__link--hide-text{*/
-/*    font-size:0;*/
-/*    line-height:0;*/
-/*    overflow: hidden;*/
-/*}*/
 
 .menu__link::after {
     content: "";
