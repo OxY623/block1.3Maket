@@ -1,41 +1,19 @@
+/* Media Queries */
 @media screen and (min-width: 319px) {
-
-    .main__menu--hidden {
-        display: none;
+    .navigation {
+        overflow-x: hidden;
     }
 
-    .navigation__list {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-    }
-
-    .article {
-        align-items: center;
-    }
-
-    .article__text {
-        max-height: 90px;
+    .article__text--size{
         width: 288px;
+        max-height: 90px;
         overflow: hidden;
+        justify-content: center;
     }
 
-    .main__section {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-
-    .main__header {
-        padding-left: 16px;
-        padding-bottom: 24px;
-    }
-
-    .main__title::before {
-        margin-left: -16px;
-    }
-
-    .article {
-        gap: 16px;
+    .article__content--size{
+        padding-left:16px;
+        padding-bottom: 16px;
     }
 
 

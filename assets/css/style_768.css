@@ -1,9 +1,10 @@
-@media screen and (min-width: 768px) {
-
-    .header--padding {
-        padding-left: 32px;
-        padding-right: 32px;
-
+@media screen and (min-width: 767px) {
+    .header--padding{
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+    .menu__button {
+        display: flex;
     }
 
     .menu--primary {
@@ -12,28 +13,24 @@
 
     .main__header {
         padding-top: 24px;
-        padding-left: 32px;
+        padding-left: 25px;
         padding-bottom: 32px;
         gap: 32px;
     }
 
     .main__title::before {
-        margin-left: -32px;
+        left: -24px;
     }
 
     .header__deliver--hidden {
         display: block;
     }
 
-
     .article {
-        width: auto;
-        flex-direction: row;
-        justify-content: space-between;
-
-        padding-bottom: 40px;
-        padding-left: 25px;
         padding-right: 25px;
+        flex-direction: row;
+        gap: 48px;
+
     }
 
     .article__text {
@@ -47,20 +44,9 @@
         overflow: hidden;
     }
 
-    .article {
-
-        padding-left: 32px;
-        padding-right: 32px;
-    }
-
-    .article__content {
-        gap: 8px;
-    }
-
-    .article__content {
+    .article__content--size {
+        gap: 10px;
         align-self: flex-start;
+        padding-left: 25px;
     }
-
-
-
 }

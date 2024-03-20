@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>1.3 Maket</title>
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/normalize/normalize.css">
+    <link rel="stylesheet" href="assets/css/normalize/reset/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/style_320.css">
     <link rel="stylesheet" href="assets/css/style_768.css">
@@ -14,60 +15,68 @@
 <body>
 <header class="header header--padding">
     <div class="header__wrapper wrapper">
-        <nav class="header__element menu-burger">
-            <div hidden class="menu-burger__line"></div>
-            <div hidden class="menu-burger__line"></div>
-            <div hidden class="menu-burger__line"></div>
-        </nav>
+        <button type="button" class="menu-burger-button round-icon" aria-label="Открыть меню">
+            <span hidden="hidden" class="menu-burger-button__line"></span>
+            <span hidden="hidden" class="menu-burger-button__line"></span>
+            <span hidden="hidden" class="menu-burger-button__line"></span>
+        </button>
+
         <div class="header__deliver header__deliver--hidden deliver"></div>
     </div>
-    <div class="header__element logo">
+    <div class="header__logo logo">
         <a href="#" aria-label="Посетить сайт компании" class="logo__link">
             <img src="assets/images/Grouplogotype.svg" alt="Логотип компании CPS" class="logo__logotype">
         </a>
     </div>
-    <div class="header__wrapper header__wrapper-menu wrapper">
+    <div class="header__wrapper-menu wrapper-menu">
         <nav class="menu menu--primary">
             <ul class="menu__list">
-                <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                                  class="menu__link menu__link--call menu__link--hide-text"
-                                                                  aria-label="Позвонить компании"><span>Позвонить</span></a>
+                <li class="menu__item"><a href="#"
+                                          class="menu__link menu__link--call  round-icon"
+                                          aria-label="Позвонить компании"></a>
                 </li>
-                <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                                  class="menu__link menu__link--write menu__link--hide-text"
-                                                                  aria-label="Написать компании"><span>Написать</span></a>
+                <li class="menu__item"><a href="#"
+                                          class="menu__link menu__link--write  round-icon"
+                                          aria-label="Написать компании"></a>
                 </li>
-                <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                                  class="menu__link menu__link--login menu__link--hide-text"
-                                                                  aria-label="Зайти в свой кабинет"><span>Логин</span></a>
+                <li class="menu__item"><a href="#"
+                                          class="menu__link menu__link--login  round-icon"
+                                          aria-label="Зайти в свой кабинет"></a>
                 </li>
             </ul>
         </nav>
-        <div class="menu__deliver menu__deliver--hidden deliver"></div>
+        <div class="menu__deliver deliver"></div>
         <nav class="menu menu--secondary">
             <ul class="menu__list">
-                <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                                  class="menu__link menu__link--status menu__link--hide-text"><span>Статус ремонта</span></a>
+                <li class="menu__item menu__item--hidden-link">
+                    <button class="menu__button menu__button--status round-icon" aria-label="Статус ремонта">
+                    </button>
                 </li>
-                <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                                  class="menu__link menu__link--application menu__link--hide-text"><span>Отправить заявку</span></a>
+                <li class="menu__item menu__item--hidden-link">
+                    <button class="menu__button menu__button--application round-icon" aria-label="Отправить заявку">
+                    </button>
                 </li>
             </ul>
         </nav>
     </div>
 </header>
 <main class="main">
+
     <header class="main__header">
-        <h1 class="main__title main__title--padding main__title--position">Услуги и сервисы</h1>
-        <nav class="main__menu main__menu--hidden main__menu--position menu menu--secondary">
+        <div class="main__wrapper wrapper">
+        <h1 class="main__title">Услуги и сервисы</h1>
+        <nav class="main__menu main__menu--hidden menu--secondary">
             <ul class="menu__list">
-                <li class="menu__item menu__item--hidden-link"><a href="#" class="menu__link menu__link--status"><span>Статус ремонта</span></a>
+                <li class="menu__item menu__item--hidden-link">
+                    <button class="menu__button"><span>Статус ремонта</span></button>
                 </li>
-                <li class="menu__item menu__item--hidden-link"><a href="#"
-                                                                  class="menu__link menu__link--application"><span>Отправить заявку</span></a>
+                <li class="menu__item menu__item--hidden-link">
+                    <button class="menu__button"><span>Отправить заявку</span></button>
                 </li>
             </ul>
         </nav>
+
+    </div>
         <nav class="navigation">
             <ul class="navigation__list">
                 <li class="navigation__item navigation__item--active"><a href="#"
@@ -86,15 +95,15 @@
     <section class="main__section">
         <h2 hidden>Это главная секция</h2>
         <article class="article">
-            <div class="article__content">
+            <div class="article__content article__content--size">
                 <h3 hidden>О нас</h3>
-                <p class="article__text text">
+                <p class="article__text article__text--size">
                     Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
                     отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                     <br> <br>
                     <span class="text__hidden-part">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
                 </p>
-                <button type="button" class="article__button button_read-more">Читать далее</button>
+                <button type="button" class="article__button button button_read-more">Читать далее</button>
             </div>
             <img src="assets/images/Picture%20Copybackground-logotype.jpg" alt="Это фото логотипа компании"
                  class="article__image">
