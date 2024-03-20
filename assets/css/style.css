@@ -224,6 +224,7 @@ body {
     overflow-x: auto;
     white-space: nowrap;
     display: flex;
+
 }
 
 .navigation__list {
