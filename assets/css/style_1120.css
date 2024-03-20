@@ -68,14 +68,24 @@
         padding-left: 32px;
     }
 
-    .article__text--size {
-        width: 490px;
+    .article__content--size {
+        min-width: 490px;
         min-height: 160px;
+        padding-left:35px;
+        padding-right: 35px;
+
+    }
+
+    .article__image {
+        padding-left:0;
+        padding-right: 30px;
+        min-width: 360px;
+        flex:1;
 
     }
 
     .main__section {
-        padding-bottom: 35px;
+        padding-bottom: 40px;
     }
 
     .navigation {
@@ -96,9 +106,8 @@
         left: -32px;
     }
 
-    .article {
-        padding-right: 32px;
-        gap: 49px;
+    .main__section {
+        padding-bottom: 49px;
     }
 }
 

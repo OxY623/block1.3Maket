@@ -16,7 +16,7 @@
         padding-top: 24px;
         padding-left: 25px;
         padding-bottom: 32px;
-        gap: 32px;
+        gap: 22px;
     }
 
     .main__title::before {
@@ -28,9 +28,10 @@
     }
 
     .article {
-        padding-right: 25px;
+        padding:0;
         flex-direction: row;
-        gap: 48px;
+        /*gap: 48px;*/
+        justify-content: center;
 
     }
 
@@ -41,13 +42,20 @@
         letter-spacing: 0.2px;
         text-align: left;
         max-height: 160px;
-        width: 312px;
+        min-width: 312px;
         overflow: hidden;
     }
 
     .article__content--size {
-        gap: 10px;
+        /*gap: 10px;*/
         align-self: flex-start;
-        padding-left: 25px;
+        padding:0 25px 0 25px;
+        flex:1;
+    }
+
+    .article__image {
+        padding:0 25px 0 25px;
+        min-width: 360px;
+        flex:2;
     }
 }
