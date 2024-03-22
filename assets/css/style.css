@@ -189,6 +189,9 @@
     justify-content: space-between;
     position: relative;
 }
+.menu__button{
+    cursor: pointer;
+}
 .main__header{
     /*display: inline-block;*/
     display:-webkit-box;
