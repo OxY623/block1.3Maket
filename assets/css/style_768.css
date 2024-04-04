@@ -4,10 +4,7 @@
         padding-right: 24px;
     }
 
-    .menu__button {
-        display: flex;
-    }
-
+    .menu__button,
     .menu--primary {
         display: flex;
     }
@@ -28,11 +25,9 @@
     }
 
     .article {
-        padding:0;
+        padding: 0;
         flex-direction: row;
-        /*gap: 48px;*/
         justify-content: center;
-
     }
 
     .article__text {
@@ -46,16 +41,18 @@
         overflow: hidden;
     }
 
+    .article__content--size,
+    .article__image {
+        padding: 0 25px;
+    }
+
     .article__content--size {
-        /*gap: 10px;*/
         align-self: flex-start;
-        padding:0 25px 0 25px;
-        flex:1;
+        flex: 1;
     }
 
     .article__image {
-        padding:0 25px 0 25px;
         min-width: 360px;
-        flex:2;
+        flex: 2;
     }
 }

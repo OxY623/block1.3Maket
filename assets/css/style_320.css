@@ -1,14 +1,8 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 @media screen and (min-width: 319px) {
     .navigation {
-        overflow-x: scroll;
+        overflow-x: auto;
         overflow-y: hidden;
+        overflow-x: visible;
     }
 
     .article__text--size {
@@ -25,6 +19,4 @@
         padding-right: 16px;
         padding-bottom: 16px;
     }
-
-
 }
