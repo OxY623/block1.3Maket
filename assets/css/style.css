@@ -295,8 +295,8 @@
 }
 
 /* Hide on screens less than 320px */
-@media screen and (max-width: 319px) {
-    html body {
-        display: none;
-    }
-}
+/*@media screen and (max-width: 319px) {*/
+/*    html body {*/
+/*        display: none;*/
+/*    }*/
+/*}*/
